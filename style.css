@@ -1,0 +1,27 @@
+
+.name{
+    margin-top: 30px;
+}
+
+.icon{
+    margin:45px;
+}
+body{
+    background-color: beige;
+}
+footer{
+    margin: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    width: 5%;
+    display: block;
+}
+
+li {
+    list-style:none;
+    float:right;
+}
+
+img {
+    pointer-events: none; 
+}
