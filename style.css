@@ -17,7 +17,7 @@ body{
 }
 .sns{
     float: right;
-    margin-right: 20px;
+    margin: 0px 20px 20px 20px;
 }
 
 @keyframes fade{
@@ -27,4 +27,5 @@ body{
     100%{
       opacity: 1;
     }
-  }
+}
+
