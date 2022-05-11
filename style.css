@@ -8,20 +8,23 @@
 }
 body{
     background-color: beige;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
-footer{
-    margin: 10px;
-    margin-right: 0;
-    margin-left: auto;
-    width: 5%;
-    display: block;
+.right{
+    margin: 0 0 0 auto;
 }
-
-li {
-    list-style:none;
-    float:right;
+.sns{
+    float: right;
+    margin-right: 20px;
 }
 
-img {
-    pointer-events: none; 
-}
+@keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
