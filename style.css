@@ -1,28 +1,21 @@
-
-.name{
-    margin-top: 30px;
-}
-
-.icon{
-    margin: 15px 45px 45px 45px;
-}
 body{
-    background-color: beige;
+    background-color: var(--bg-cr);
+    color: var(--txt-cr);
+
+    transition: .5s;
+
     animation-name: fade;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-.right{
-    margin: 0 0 0 auto;
-}
-.sns{
-    float: right;
-    margin: 0px 20px 20px 20px;
+
+th{
+    color: var(--txt-cr);
 }
 
-a {
-    color: var(--primary-color);
-  }
+td{
+    color: var(--txt-cr);
+}
 
 @keyframes fade{
     0%{
@@ -34,27 +27,15 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #797380;
-        color: white;
-    }
-    th{
-        color: white;
-    }
-    td{
-        color: white;
+    :root{
+        --bg-cr: #797380;
+        --txt-cr: white;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: beige;
-        color: black;
-    }
-    th{
-        color: black;
-    }
-    td{
-        color: black;
+    :root{
+        --bg-cr: beige;
+        --txt-cr: black;
     }
 }

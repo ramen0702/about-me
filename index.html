@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ramen-Profile</title>
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SETTING TITLE -->
+  <title>ramen-Profile</title>
+  <!-- READ SOME BOOTSTRAP FILES -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- READ THE STYLESHEET FILE -->
+  <link href="style.css" rel="stylesheet">
+  <!-- SETTING FAVICON -->
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body> 
     <div class="container-fluid">
         <div class="row">
-            <div class="side col-lg-3"></div>
-            <div class="mid col-lg-6">
-              <h1 class = "name text-center">ramen</h1>
-              <img class="icon d-block mx-auto img-circle rounded-circle Spacing" src="me.png" style="width:150px;">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <!-- MY NAME -->
+              <h1 class = "mt-1 text-center">ramen</h1>
+              <!-- MY ICON -->
+              <img class="mt-4 mb-5 d-block mx-auto img-circle rounded-circle Spacing" src="me.png" style="width:150px;">
+              <!-- GREETING TEXT -->
               <h6 class="text-center">Hello!</h6>
               <p class="text-center">I am a student studying programming in Hyogo, Japan.<br>
               You can take a look at my repository if you like.</p>
-
+              <!-- BIO -->
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th scope="col" colspan="2" class="text-center">Bio</th>
+                    <th colspan="2" class="text-center">Bio</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -47,23 +52,23 @@
                 </tbody>
               </table>
             </div>
-            <div class="side col-lg-3" ></div>
+            <div class="col-lg-3" ></div>
         </div>
         <footer>
-          <div class="right box">
-            <div class="sns">
-              <a href="https://github.com/ramen0702">
-                <img src="github.png" style="width:40px;">
-              </a>
+          <!-- MY SNS -->
+          <div class="mx-2 my-1" style="float: right;">
+            <a href="https://github.com/ramen0702">
+              <img src="github.png" style="width:40px;">
+            </a>
           </div>
-          <div class="sns">
+          <div class="mx-2 my-1" style="float: right;">
             <a href="https://www.instagram.com/masaaa0702/">
               <img src="Instagram.png" style="width:40px;">
             </a>
           </div>
-          </div>
         </footer>
     </div>
+    <!-- SETTING JQUERY AND BOOTSTRAP -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
