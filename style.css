@@ -4,7 +4,7 @@
 }
 
 .icon{
-    margin:45px;
+    margin: 15px 45px 45px 45px;
 }
 body{
     background-color: beige;
@@ -20,6 +20,10 @@ body{
     margin: 0px 20px 20px 20px;
 }
 
+a {
+    color: var(--primary-color);
+  }
+
 @keyframes fade{
     0%{
       opacity: 0;
@@ -29,3 +33,28 @@ body{
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #797380;
+        color: white;
+    }
+    th{
+        color: white;
+    }
+    td{
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: beige;
+        color: black;
+    }
+    th{
+        color: black;
+    }
+    td{
+        color: black;
+    }
+}
