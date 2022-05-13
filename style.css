@@ -11,10 +11,21 @@ body{
 
 th{
     color: var(--txt-cr);
+    transition: .5s;
 }
 
 td{
     color: var(--txt-cr);
+    transition: .5s;
+}
+
+.light-theme {
+    --bg-cr: beige;
+    --txt-cr: black;
+}
+.dark-theme {
+    --bg-cr: #797380;
+    --txt-cr: white;
 }
 
 @keyframes fade{
