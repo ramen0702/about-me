@@ -1,3 +1,4 @@
+/* Set color variable */
 body{
     background-color: var(--bg-cr);
     color: var(--txt-cr);
@@ -8,26 +9,27 @@ body{
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-
 th{
     color: var(--txt-cr);
     transition: .5s;
 }
-
 td{
     color: var(--txt-cr);
     transition: .5s;
 }
 
+/* Set dark color variable */
 .light-theme {
     --bg-cr: beige;
     --txt-cr: black;
 }
+/* Set light color variable */
 .dark-theme {
     --bg-cr: #797380;
     --txt-cr: white;
 }
 
+/* Set fade */
 @keyframes fade{
     0%{
       opacity: 0;
@@ -37,16 +39,68 @@ td{
     }
 }
 
+/* Initial set color */
 @media (prefers-color-scheme: dark) {
     :root{
         --bg-cr: #797380;
         --txt-cr: white;
     }
 }
-
 @media (prefers-color-scheme: light) {
     :root{
         --bg-cr: beige;
         --txt-cr: black;
     }
+}
+
+/* Design DarkMode button */
+.cp_ipcheck {
+	width: 180px;
+	margin: 2em 0;
+	text-align: center;
+}
+.cp_ipcheck input {
+	display: none;
+}
+.cp_ipcheck label {
+	position: relative;
+	display: block;
+	padding: 15px 0;
+    padding-top: 25px;
+	padding-right: 35px;
+	cursor: pointer;
+}
+.cp_ipcheck input[type='checkbox'] {
+	position: absolute;
+	visibility: hidden !important;
+}
+.cp_ipcheck input[type='checkbox'] + label:before,
+.cp_ipcheck input[type='checkbox'] + label:after {
+	position: absolute;
+	top: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: -7.5px;
+	content: '';
+}
+.cp_ipcheck input[type='checkbox'] + label:before {
+	right: 0;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #e4e3e1;
+	border-radius: 30px;
+	background: #ffffff;
+}
+.cp_ipcheck input[type='checkbox'] + label:after {
+	right: 29px;
+	width: 30px;
+	height: 30px;
+	-webkit-transition: all 200ms ease-out;
+	        transition: all 200ms ease-out;
+	border-radius: 50%;
+	background: #bdbdbd;
+}
+.cp_ipcheck input[type='checkbox']:checked + label:after {
+	right: 0;
+	background: #212121;
 }
